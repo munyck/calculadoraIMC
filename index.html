@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de IMC</title>
+  <style type="text/css">
+
+  </style>
+  <script type="text/javascript">
+
+    function Calcular() {
+      var idade;
+      var peso;
+      var altura;
+      var imc = peso / (altura * altura);
+
+      if(imc < 20)
+      {
+        alert('Você esta abaixo do peso!');
+      }
+      else if(imc >20 && imc <= 25)
+      {
+        alert("Peso Ideal");
+      }
+      else if(imc >25 && imc <= 30)
+      {
+        alert("Sobrepeso");
+      }
+      else if(imc >30 && imc <= 35)
+      {
+        alert("Obesidade Moderada");
+      }
+      else if(imc >35 && imc <= 40)
+      {
+        alert("Obesidade Severa");
+      }
+      else if(imc >40 && imc <= 50)
+      {
+        alert("Obesidade Morbida");
+      }
+      else
+      {
+        alert('Gordo');
+      }
+    }
+
+  </script>
+</head>
+<body>
+</body>
+  <label for="sexo">Sexo: </label>
+  <select name="sexo" id="sexo">
+    <option value="feminino">Feminino</option>
+    <option value="masculino">Masculino</option>
+  </select>
+
+  <label for="idade">Idade: </label>
+  <input name="idade" type="text" />
+  <label for="peso">Peso: </label>
+  <input name="peso" type="text" />
+  <label for="altura">Altura: </label>
+  <input name="altura" type="text" />
+  <button class="calcular" onclick=Calcular()>Calcular</button>
+  <label for="imc">Seu IMC atual é: </label>
+  <output name="imc" for="imc"></output>
+
+
+</html>
