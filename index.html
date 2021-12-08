@@ -4,65 +4,87 @@
     <meta charset="UTF-8">
     <title>Calculadora de IMC</title>
   <style type="text/css">
+  body {
+    text-align: center;
+    width: 700px;
+  }
+  .calculadora {
+    width: 50%;
+  }
+  .resultado {
+    flex-flow: row wrap;
+    display: flex;
+
+  }
 
   </style>
   <script type="text/javascript">
-
     function Calcular() {
-      var idade;
-      var peso;
-      var altura;
-      var imc = peso / (altura * altura);
+      var altura = document.getElementById("altura");
+      var peso = document.getElementById("peso");
+      var imc = peso.value / (altura.value * altura.value);
 
-      if(imc < 20)
-      {
-        alert('Você esta abaixo do peso!');
+      alert("Seu IMC atual é: "+imc.toFixed(2)+" kg/m².");
+
+      if (imc < 18.5) {
+        alert("Magreza.");
       }
-      else if(imc >20 && imc <= 25)
-      {
-        alert("Peso Ideal");
+      else if (imc > 18.5 && imc < 24.9) {
+        alert("Normal.");
       }
-      else if(imc >25 && imc <= 30)
-      {
-        alert("Sobrepeso");
+      else if (imc > 24.9 && imc <30) {
+        alert("Sobrepeso.")
       }
-      else if(imc >30 && imc <= 35)
+      else if (imc > 30)
       {
-        alert("Obesidade Moderada");
+        alert("Obesidade.")
       }
-      else if(imc >35 && imc <= 40)
-      {
-        alert("Obesidade Severa");
-      }
-      else if(imc >40 && imc <= 50)
-      {
-        alert("Obesidade Morbida");
-      }
-      else
-      {
-        alert('Gordo');
-      }
+
     }
 
   </script>
 </head>
 <body>
+<form name="frmimc" id="frmimc">
+<div class="resultado">
+  <div class="calculadora">
+
+      <fieldset>
+        <p>Calculadora IMC</p>
+        <p> <label for="sexo">Sexo: </label>
+        <select name="sexo" id="sexo">
+          <option value="feminino">Feminino</option>
+          <option value="masculino">Masculino</option>
+        </select>
+        </p>
+        <p>
+        <label>Idade: </label>
+        <input name="idade" type="number" />
+        </p>
+        <p>
+        <label for="peso">Peso: (em quilos. Ex.: 65)</label>
+        <input id="peso" name="peso" type="number" />
+        </p>
+        <p>
+        <label for="altura">Altura: (em metros. Ex.: 1,62) </label>
+        <input id="altura" name="altura" type="number" />
+        </p>
+        <input type="button" value="Calcular" onclick="Calcular();" />
+
+      </fieldset>
+
+  </div>
+  <fieldset>
+    <p>
+    O seu IMC atual é: <input type="text" name="totalimc" />
+    </p>
+    <p>
+    Nível: <input type="text" name="nivel" />
+    </p>
+  </fieldset>
+</div>
+</form>
+
 </body>
-  <label for="sexo">Sexo: </label>
-  <select name="sexo" id="sexo">
-    <option value="feminino">Feminino</option>
-    <option value="masculino">Masculino</option>
-  </select>
-
-  <label for="idade">Idade: </label>
-  <input name="idade" type="text" />
-  <label for="peso">Peso: </label>
-  <input name="peso" type="text" />
-  <label for="altura">Altura: </label>
-  <input name="altura" type="text" />
-  <button class="calcular" onclick=Calcular()>Calcular</button>
-  <label for="imc">Seu IMC atual é: </label>
-  <output name="imc" for="imc"></output>
-
 
 </html>
