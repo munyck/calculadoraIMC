@@ -14,9 +14,7 @@
   .resultado {
     flex-flow: row wrap;
     display: flex;
-
   }
-
   </style>
   <script type="text/javascript">
     function Calcular() {
@@ -25,7 +23,7 @@
       var imc = peso.value / (altura.value * altura.value);
 
       var nivelImc = '';
-      var imcAtual = "Seu IMC atual é: "+imc.toFixed(2)+" kg/m².";
+      var imcAtual = +imc.toFixed(2)+" kg/m².";
 
       if (imc < 18.5) {
         nivelImc = "Magreza.";
@@ -42,9 +40,6 @@
       }
       document.getElementById('imcAtual').value = imcAtual;
       document.getElementById('nivelImc').value = nivelImc;
-
-      alert(imcAtual);
-      alert(nivelImc);
     }
 
   </script>
@@ -75,9 +70,7 @@
         <input id="altura" name="altura" type="number" />
         </p>
         <input type="button" value="Calcular" onclick="Calcular();" />
-
       </fieldset>
-
   </div>
   <fieldset>
     <p>
@@ -89,7 +82,5 @@
   </fieldset>
 </div>
 </form>
-
 </body>
-
 </html>
