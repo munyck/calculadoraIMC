@@ -14,7 +14,6 @@
   .resultado {
     flex-flow: row wrap;
     display: flex;
-
   }
 
   </style>
@@ -23,21 +22,29 @@
       var altura = document.getElementById("altura");
       var peso = document.getElementById("peso");
       var imc = peso.value / (altura.value * altura.value);
+      var nivel = document.getElementsByName("nivel");
+
 
       alert("Seu IMC atual é: "+imc.toFixed(2)+" kg/m².");
 
+
       if (imc < 18.5) {
-        alert("Magreza.");
+        nivel = "Magreza.";
+        alert(nivel);
       }
       else if (imc > 18.5 && imc < 24.9) {
-        alert("Normal.");
+        nivel = "Normal.";
+       alert(nivel);
+
       }
       else if (imc > 24.9 && imc <30) {
-        alert("Sobrepeso.")
+        nivel = "Sobrepeso.";
+        alert(nivel);
       }
       else if (imc > 30)
       {
-        alert("Obesidade.")
+        nivel = "Obesidade.";
+        alert(nivel);
       }
 
     }
@@ -69,17 +76,16 @@
         <label for="altura">Altura: (em metros. Ex.: 1,62) </label>
         <input id="altura" name="altura" type="number" />
         </p>
-        <input type="button" value="Calcular" onclick="Calcular();" />
-
+        <input type="button" value="Calcular" onclick="Calcular(this);" />
       </fieldset>
 
   </div>
   <fieldset>
     <p>
-    O seu IMC atual é: <input type="text" name="totalimc" />
+    O seu IMC atual é: <input type="number" id ="imc" name="imc" />
     </p>
     <p>
-    Nível: <input type="text" name="nivel" />
+    Nível: <input type="text" name="nivel"/>
     </p>
   </fieldset>
 </div>
