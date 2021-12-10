@@ -5,62 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<style>
-  .container {
-    padding: 20px;
-    text-align: center;
-    width: 400px;
-  }
-  h1 {
-    padding: 10px;
-  }
-</style>
-  <script type="text/javascript">
-    function Calcular() {
-      var altura = document.getElementById("altura");
-      var peso = document.getElementById("peso");
-      var imc = peso.value / (altura.value * altura.value);
+  <link href="style.css" rel="stylesheet">
+  <script src="calcimc.js"></script>
 
-      var nivelImc = '';
-      var imcAtual = +imc.toFixed(2)+" kg/m².";
-
-      if (imc < 18.5) {
-        nivelImc = "Magreza.";
-      }
-      else if (imc > 18.5 && imc < 24.9) {
-        nivelImc = "Normal.";
-      }
-      else if (imc > 24.9 && imc <30) {
-        nivelImc = "Sobrepeso.";
-      }
-      else if (imc > 30)
-      {
-        nivelImc = "Obesidade.";
-      }
-      document.getElementById('imcAtual').value = imcAtual;
-      document.getElementById('nivelImc').value = nivelImc;
-    }
-  </script>
 </head>
 <body>
-<form name="frmimc" id="frmimc">
+  <form name="frmimc" id="frmimc">
 
-  <div class="container p3 my-3 bg-dark text-white">
-    <h1>Calculadora IMC</h1>
-    <p>Peso: (em quilos. Ex.: 65)</p> <p><input id="peso" name="peso" type="number" /></p>
-    <p>Altura: (em metros. Ex.: 1,62)</p> <p> <input id="altura" name="altura" type="number" /></p>
-    <p><input type="button" value="Calcular" onclick="Calcular();" /></p>
-  </div>
+    <div class="container p3 my-3 bg-dark text-white">
+      <h1>Calculadora IMC</h1>
+      <p>Peso: (em quilos. Ex.: 65)</p> <p><input id="peso" name="peso" type="number" /></p>
+      <p>Altura: (em metros. Ex.: 1,62)</p> <p> <input id="altura" name="altura" type="number" /></p>
+      <p><input type="button" value="Calcular" onclick="Calcular();" /></p>
+    </div>
 
-  <div class="container p3 my-3 bg-dark text-white">
-    O seu IMC atual é: <p><input id="imcAtual" style="color:white" disabled/></p>
-    Nível: <p><input id="nivelImc" style="color: white" disabled/></p>
-  </div>
+    <div class="container p3 my-3 bg-dark text-white">
+      O seu IMC atual é: <p><input id="imcAtual" style="color:white" disabled/></p>
+      Nível: <p><input id="nivelImc" style="color: white" disabled/></p>
+    </div>
 
-</form>
+  </form>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
