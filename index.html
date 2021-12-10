@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Calculadora de IMC</title>
-  <style type="text/css">
-  body {
+  <title>Calculadora de IMC</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+  .container {
+    max-width: 20%;
+    padding: 20px;
     text-align: center;
-    width: 700px;
   }
-  .calculadora {
-    width: 50%;
+  h1 {
+    padding: 10px;
   }
-  .resultado {
-    flex-flow: row wrap;
-    display: flex;
-  }
-  </style>
+
+
+</style>
   <script type="text/javascript">
     function Calcular() {
       var altura = document.getElementById("altura");
@@ -46,41 +50,25 @@
 </head>
 <body>
 <form name="frmimc" id="frmimc">
-<div class="resultado">
-  <div class="calculadora">
 
-      <fieldset>
-        <p>Calculadora IMC</p>
-        <p> <label for="sexo">Sexo: </label>
-        <select name="sexo" id="sexo">
-          <option value="feminino">Feminino</option>
-          <option value="masculino">Masculino</option>
-        </select>
-        </p>
-        <p>
-        <label>Idade: </label>
-        <input name="idade" type="number" />
-        </p>
-        <p>
-        <label for="peso">Peso: (em quilos. Ex.: 65)</label>
-        <input id="peso" name="peso" type="number" />
-        </p>
-        <p>
-        <label for="altura">Altura: (em metros. Ex.: 1,62) </label>
-        <input id="altura" name="altura" type="number" />
-        </p>
-        <input type="button" value="Calcular" onclick="Calcular();" />
-      </fieldset>
+  <div class="container p3 my-3 bg-dark text-white">
+    <h1>Calculadora IMC</h1>
+    <p>Peso: (em quilos. Ex.: 65) <input id="peso" name="peso" type="number" /></p>
+    <p>Altura: (em metros. Ex.: 1,62) <input id="altura" name="altura" type="number" /></p>
+    <p><input type="button" value="Calcular" onclick="Calcular();" /></p>
   </div>
-  <fieldset>
-    <p>
-    O seu IMC atual é: <input type="text" id="imcAtual" name="totalimc" />
-    </p>
-    <p>
-    Nível: <input type="text" id="nivelImc" name="nivel" />
-    </p>
-  </fieldset>
-</div>
+
+  <div class="container p3 my-3 bg-dark text-white">
+    O seu IMC atual é: <p><input id="imcAtual" style="color:white" disabled/></p>
+    Nível: <p><input id="nivelImc" style="color: white" disabled/></p>
+  </div>
+
 </form>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
