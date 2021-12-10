@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d303575-c4c2-4467-9900-82be3c980fb8" name="Changes" comment="criados containers">
+    <list default="true" id="7d303575-c4c2-4467-9900-82be3c980fb8" name="Changes" comment="alterado width">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +27,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639149140450</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="alterado width">
+      <created>1639150049642</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639150049642</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -42,6 +50,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="criados containers" />
-    <option name="LAST_COMMIT_MESSAGE" value="criados containers" />
+    <MESSAGE value="alterado width" />
+    <option name="LAST_COMMIT_MESSAGE" value="alterado width" />
   </component>
 </project>
