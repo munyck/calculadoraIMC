@@ -1,4 +1,4 @@
-z<h1> PROJETO: Calculadora IMC </h1>
+<h1> PROJETO: Calculadora IMC </h1>
 <h2> Diretório do projeto <i>calculadora IMC</i> </h2>
 
 Interações adicionadas até o momento:
