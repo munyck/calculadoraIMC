@@ -1,8 +1,19 @@
-.container {
-    padding: 20px;
-    text-align: center;
-    width: 400px;
+body{
+    background: url('img/bg-img.jpeg');
+    background-size: cover;
 }
-h1 {
-    padding: 10px;
+
+.container {
+    background: linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.70)100%);
+    border-radius: 15px;
+    padding: 60px;
+}
+/* -- desativa as setas padrões do input type='number' -- */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input {
+    text-align: center;
 }
