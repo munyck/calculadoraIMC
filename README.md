@@ -10,7 +10,7 @@ Interações adicionadas até o momento:
 5) Atualizado Layout
 
 # Layout atualizado:
-<img src="img/atual.jpg">
+<img src="src/assets/img/atual.jpg">
 
 # Layout antigo:
-<img src="img/antigo.jpg">
+<img src="src/assets/img/antigo.jpg">
