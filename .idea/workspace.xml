@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d303575-c4c2-4467-9900-82be3c980fb8" name="Changes" comment="alterado width">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/mais-atual.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/calcIMC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/calcIMC.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/antigo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/antigo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/atual.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/atual.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/bg-img.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bg-img.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +98,7 @@
       <workItem from="1647898222673" duration="529000" />
       <workItem from="1647898865675" duration="3000" />
       <workItem from="1692734642144" duration="5244000" />
-      <workItem from="1692750199367" duration="2865000" />
+      <workItem from="1692750199367" duration="2991000" />
     </task>
     <option name="localTasksCounter" value="4" />
     <servers />
