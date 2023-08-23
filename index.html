@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js"></script>
+    <title>Calculadora de IMC</title>
+</head>
+<body class="min-h-screen bg-cover bg-center overflow-hidden" style="background-image: url('assets/bg-img.jpeg')">
+    <form id="imc-form" class="flex justify-center">
+        <div class="bg-gray-900 bg-opacity-75 rounded-xl md:m-20 md:p-12 p-8 m-8 text-center">
+            <div class="md:m-12 md:text-2xl">
+                <p class="text-3xl text-white font-bold mb-8">Calcular IMC</p>
+                <div>
+                    <label class="text-white" for="weight">Informe o peso: * </label>
+                    <br><span class="text-white text-sm">em quilos (kg), ex.: 65</span>
+                    <br>
+                    <input id="weight" name="weight" type="number" required class="m-4 text-center text-black">
+                </div>
+                <div>
+                    <label class="text-white" for="height">Informe a altura: * </label>
+                    <br><span class="text-white text-sm">em centímetros (cm), ex.: 162</span>
+                    <br>
+                    <input id="height" name="height" type="number" required class="m-4 text-center text-black">
+                </div>
+                <div>
+                    <button type="submit" class="text-white bg-gray-950 hover:bg-gray-800 rounded-lg px-8 py-2">Calcular</button>
+                </div>
+            </div>
+            <p class="text-3xl text-white font-bold m-12">Resultado: </p>
+            <div id="result" class="m-8 text-white overflow-auto h-12 md:h-20"></div>
+            <button type="reset" id="clear-button" class="text-white bg-gray-800 hover:bg-gray-900 rounded-lg px-8 py-2">Limpar</button>
+        </div>
+    </form>
+</body>
+</html>
