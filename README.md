@@ -1,7 +1,7 @@
 <h1> PROJETO: Calculadora de IMC </h1>
 <h2> Diretório do projeto <i>calculadora IMC</i> </h2>
 
-* Link do projeto no Netlify:  
+* Link do projeto rodando: https://munyck.github.io/calculadoraIMC/  
 
 Interações adicionadas até o momento:
 
